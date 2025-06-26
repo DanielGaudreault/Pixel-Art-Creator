@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Pixel Art Creator</h1>
+        
+        <!-- Controls -->
+        <div class="controls">
+            <div class="tool-selector">
+                <button id="pencil" class="active">✏️ Pencil</button>
+                <button id="fill">🎨 Fill</button>
+                <button id="erase">🧽 Erase</button>
+            </div>
+            
+            <div class="color-picker">
+                <input type="color" id="color" value="#000000">
+                <input type="color" id="secondaryColor" value="#ffffff">
+                <span>(Right-click to erase)</span>
+            </div>
+            
+            <div class="grid-controls">
+                <label>Grid Size:</label>
+                <select id="gridSize">
+                    <option value="8">8x8</option>
+                    <option value="16">16x16</option>
+                    <option value="32">32x32</option>
+                    <option value="64">64x64</option>
+                </select>
+                <button id="clear">🧹 Clear</button>
+            </div>
+        </div>
+        
+        <!-- Canvas Grid -->
+        <div class="pixel-grid" id="grid"></div>
+        
+        <!-- Save/Load/Export -->
+        <div class="save-options">
+            <button id="save">💾 Save</button>
+            <button id="load">📂 Load</button>
+            <button id="export">📥 Export PNG</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
