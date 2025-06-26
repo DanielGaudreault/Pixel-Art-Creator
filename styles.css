@@ -1,0 +1,97 @@
+body {
+    font-family: 'Courier New', monospace;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.tool-selector button {
+    padding: 8px 12px;
+    border: none;
+    background: #e0e0e0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.tool-selector button.active {
+    background: #007bff;
+    color: white;
+}
+
+.color-picker {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pixel-grid {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 1px;
+    background: #ddd;
+    border: 2px solid #333;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.pixel {
+    aspect-ratio: 1;
+    background: white;
+    cursor: crosshair;
+}
+
+.pixel:hover {
+    opacity: 0.8;
+}
+
+.save-options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.save-options button {
+    padding: 8px 16px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-options button:hover {
+    opacity: 0.9;
+}
